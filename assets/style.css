@@ -53,7 +53,7 @@ header ul li a{
     position: relative;
     text-decoration: none;
     margin: 0 15px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     letter-spacing: 2px;
     padding-bottom: 2px;
     color: #272727;
@@ -66,7 +66,7 @@ header ul .button{
     border-radius: 20px;
     color: #fff;
     text-shadow: 1px 1px #000;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 header ul li a:hover{
@@ -88,7 +88,7 @@ header ul li a:hover{
 }
 
 .banner .box{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: bold;
     position: relative;
     margin-left: 100px;
@@ -103,7 +103,7 @@ header ul li a:hover{
     text-decoration: none;
     border-radius: 20px;
     color: #272727;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 .form{
@@ -125,7 +125,7 @@ header ul li a:hover{
 .form .image .title{
     position: relative;
     color: #fff;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 2em;
     margin-top: 40%;
     margin-left: 20%;
@@ -135,7 +135,7 @@ header ul li a:hover{
 .form .image .sub{
     margin-left: 20%;   
     color: #fff;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     text-shadow: 1px 1px #000;
 }
 
@@ -151,7 +151,7 @@ header ul li a:hover{
 .form .bagian2 .box{
     position: relative;
     padding: 120px 130px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     background-color: #fff;
     border-radius: 20px;
     margin-left: -200px;
@@ -204,7 +204,7 @@ header ul li a:hover{
 
 .product .title h1{
     color: #fff;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 2em;
 }
@@ -219,7 +219,7 @@ header ul li a:hover{
     border-radius: 20px;
     text-align: center;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 500;
 }
 
@@ -247,7 +247,7 @@ header ul li a:hover{
     margin: 20px;
     margin-bottom: 40px;
     color: #272727;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 .product .gallery .card .desc .sub{
@@ -272,7 +272,7 @@ header ul li a:hover{
 
 .testimoni .title h1{
     color: #fff;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 2em;
 }
@@ -287,7 +287,7 @@ header ul li a:hover{
     border-radius: 20px;
     text-align: center;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 500;
 }
 
@@ -316,7 +316,7 @@ header ul li a:hover{
     margin: 20px;
     margin-bottom: 40px;
     color: #272727;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 
 }
 
@@ -330,7 +330,7 @@ header ul li a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     min-height: 80vh;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 .about .bag1{
@@ -434,7 +434,7 @@ footer{
     /* grid-template-columns: repeat(3,minmax(400px,0.5fr)); */
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     background-color: #272727;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 footer .logo{
