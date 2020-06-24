@@ -82,6 +82,12 @@ header ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-family: 'Montserrat';
+}
+
+.banner .box2
+{
+    display: none;
 }
 
 .banner .box{
@@ -104,19 +110,19 @@ header ul li a:hover{
 .banner .box .title
 {
     font-size: 1.5em;
-    font-family: ''Montserrat'';
+    font-family: 'Montserrat';
 }
 
 .banner .box .sub
 {
     font-weight: 100;
-    font-family: ''Montserrat'';
+    font-family: 'Montserrat';
 }
 
 .form{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 
 .form .image{
@@ -125,8 +131,9 @@ header ul li a:hover{
     background-size: cover;
     width: 100%;
     background-position: center;
-    min-height: 100vh;
     filter:contrast(40%);
+    display: grid;
+    place-content: center;
 }
 
 .form .image .title{
@@ -134,13 +141,10 @@ header ul li a:hover{
     color: #fff;
     font-family: 'Montserrat';
     font-size: 2em;
-    margin-top: 40%;
-    margin-left: 20%;
     text-shadow: 1px 1px #000;
 }
 
 .form .image .sub{
-    margin-left: 20%;   
     color: #fff;
     font-family: 'Montserrat';
     text-shadow: 1px 1px #000;
@@ -234,7 +238,8 @@ header ul li a:hover{
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    margin-left: 70px;
+    place-content: center;
+    margin-left: 45px;
 }
 
 .product .gallery .card{
@@ -258,7 +263,7 @@ header ul li a:hover{
 }
 
 .product .gallery .card .desc .sub{
-    color: gray;
+    color: rgb(109, 109, 109);
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -267,6 +272,7 @@ header ul li a:hover{
     position: relative;
     min-height: 120vh;
     background: linear-gradient(#272727 50%,#feded5 50%);
+    place-content: center;
 }
 
 .testimoni .title{
@@ -314,7 +320,6 @@ header ul li a:hover{
 }
 
 .testimoni .gallery .card img{
-    margin: 10px 100px;
     width: 40%;
     border-radius: 45%;
 }
@@ -343,6 +348,8 @@ header ul li a:hover{
 .about .bag1{
     background-image: url(image/background-3.jpg);
     background-size: cover;
+    text-align: center;
+    background-position: center;
     filter: contrast(50%);  
     display: grid;
     place-content: center;   
@@ -361,8 +368,6 @@ header ul li a:hover{
     padding-top: 10px;
     text-shadow: 1px 1px #000;
 }
-
-
 
 .about .bag2{
     display: grid;
@@ -506,4 +511,241 @@ footer .logo{
 #copyright{
     color: #fff;
     margin-top: 40px;
+}
+
+
+@media (max-width:1024px)
+{
+    .form
+    {
+        grid-template-columns: repeat(auto-fit,1fr);
+    }
+
+    .form .bagian2 .box
+    {
+        padding: 10px;
+    }
+
+    .product .gallery
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .testimoni .title
+    {
+        padding-top: 10px;
+    }
+
+    .testimoni .gallery
+    {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        place-content: center;
+        margin-left: 25px;
+    }
+
+    .testimoni .gallery .card
+    {
+        place-content: center;
+        padding: 10px;
+    }
+
+    .testimoni .gallery .card .desc
+    {
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+    .product .gallery .card .desc
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:768px)
+{
+
+    .logo img
+    {
+        margin-left: 150px;
+    }
+
+    .header
+    {
+        place-content: center;
+        
+    }
+
+    .banner .box
+    {
+        margin-left: 10px;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .form .bagian2 .box
+    {
+        /* padding: 50px; */
+        background-color: transparent;
+        place-content: center;
+        display: grid;
+    }
+    header ul
+    {
+        display: none;
+    }
+
+    .product .gallery .card .desc
+    {
+        font-size: 0.7em;
+    }
+
+    .product .gallery
+    {
+        margin-left: 25px;
+    }
+
+    .testimoni
+    {
+        place-content: center;
+        padding-bottom: 0;
+    }
+
+    .form
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .form .bagian2
+    {
+        place-content: center;
+    }
+
+    .form .image
+    {
+        padding: 20px;
+    }
+
+    .form .bagian2 .box
+    {
+        margin: 0;
+    }
+}
+
+@media (max-width:500px)
+{
+    .banner
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .banner .box
+    {
+        display: none;
+    }
+
+    .banner .box2
+    {
+        display: block;
+        margin-top: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 0.7em;
+        font-family: 'Montserrat';
+    }
+
+    /* .form .bagian2 .box
+    {
+        margin: 15px;
+    } */
+
+    .product .title
+    {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .product .title h1
+    {
+        padding: 0;
+        margin: 0;
+        font-size: 1.5em;
+        justify-self: center;
+    }
+
+    .product .title .button
+    {
+        font-size: 1em;
+        margin-top: 5px;
+        justify-self: center;
+    }
+    
+    .product .gallery
+    {
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+    }
+
+    .testimoni .title
+    {
+        text-align: center;
+    }
+
+    .testimoni .gallery
+    {
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+    }
+
+    footer,.nav-pages,.services
+    {
+        grid-template-columns: 1fr;
+        place-content: center;
+        text-align: center;
+    }
+
+    .logo img
+    {
+        margin-left: 25px;
+    }
+
+    .nav-pages
+    {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .nav-pages ul
+    {
+        display: block;
+    }
+
+    .nav-pages h2
+    {
+        margin-top: 20px;
+    }
+
+    .services
+    {
+        margin: 0;
+    }
+
+    .services h2
+    {
+        margin-top: 20px;
+    }
+
+    .services ul 
+    {
+        display: block;
+    }
+
+    .socialmedia
+    {
+        margin-top: 50px;
+    }
+
 }
